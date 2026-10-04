@@ -6,4 +6,5 @@ def category(request):
 
 
 def single(request):
+    
     return render (request , 'product/single-product.html')

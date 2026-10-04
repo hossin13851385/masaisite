@@ -5,6 +5,6 @@ class product(models.Model):
     name = models.CharField(max_length= 50)
     descrip = models.TextField()
     price = models.IntegerField()
-    picture = models.CharField(max_length=100)
+    picture = models.ImageField(upload_to='profiles/')
     creat_at = models.DateTimeField(auto_now=True)
     update_at = models.DateTimeField(auto_now_add=True)
